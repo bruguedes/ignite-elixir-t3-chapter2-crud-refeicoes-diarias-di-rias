@@ -3,16 +3,23 @@ defmodule Exmeal.MealTest do
 
   alias Ecto.Changeset
 
-  alias Exmeal.Meal
+  alias Exmeal.Meals.Create
+  alias Exmeal.Meals.Schema.Meal
 
   describe "changeset/1" do
     test "when all params are valid, returns a valid changeset" do
-      params = %{description: "Batata", date: "2001-05-02", calories: "20"}
+      params = %{
+        "description" => "Batata",
+        "date" => "2001-05-02",
+        "time" => "12:00:00",
+        "calories" => "20"
+      }
 
+      {:ok, params} = Create.date_parse(params)
       response = Meal.changeset(params)
 
       assert %Changeset{
-               changes: %{description: "Batata", date: ~D[2001-05-02], calories: 20},
+               changes: %{calories: 20, date: ~U[2001-05-02 12:00:00Z], description: "Batata"},
                valid?: true
              } = response
     end

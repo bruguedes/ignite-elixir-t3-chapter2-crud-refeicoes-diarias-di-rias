@@ -1,0 +1,51 @@
+{
+  "excluded": [
+    {
+      "describe": "update/2",
+      "file": "/home/bruno/Projects/Aprendendo_Elixir/ignite/desafios/ignite-elixir-t3-chapter3-crud-refeicoes-diarias-diarias/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 71
+    },
+    {
+      "describe": "update/2",
+      "file": "/home/bruno/Projects/Aprendendo_Elixir/ignite/desafios/ignite-elixir-t3-chapter3-crud-refeicoes-diarias-diarias/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 93
+    },
+    {
+      "describe": "delete/2",
+      "file": "/home/bruno/Projects/Aprendendo_Elixir/ignite/desafios/ignite-elixir-t3-chapter3-crud-refeicoes-diarias-diarias/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 56
+    },
+    {
+      "describe": "get/2",
+      "file": "/home/bruno/Projects/Aprendendo_Elixir/ignite/desafios/ignite-elixir-t3-chapter3-crud-refeicoes-diarias-diarias/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 106
+    },
+    {
+      "describe": "delete/2",
+      "file": "/home/bruno/Projects/Aprendendo_Elixir/ignite/desafios/ignite-elixir-t3-chapter3-crud-refeicoes-diarias-diarias/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 41
+    },
+    {
+      "describe": "create/2",
+      "file": "/home/bruno/Projects/Aprendendo_Elixir/ignite/desafios/ignite-elixir-t3-chapter3-crud-refeicoes-diarias-diarias/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 24
+    },
+    {
+      "describe": "get/2",
+      "file": "/home/bruno/Projects/Aprendendo_Elixir/ignite/desafios/ignite-elixir-t3-chapter3-crud-refeicoes-diarias-diarias/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 128
+    }
+  ],
+  "failed": [],
+  "invalid": [],
+  "passed": [
+    {
+      "describe": "create/2",
+      "file": "/home/bruno/Projects/Aprendendo_Elixir/ignite/desafios/ignite-elixir-t3-chapter3-crud-refeicoes-diarias-diarias/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 5,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test create/2 when all params are valid, creates a meal"
+    }
+  ],
+  "skiped": []
+}
