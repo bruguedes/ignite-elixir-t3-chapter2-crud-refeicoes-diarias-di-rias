@@ -12,4 +12,5 @@ defmodule Exmeal.Error do
   end
 
   def error_date_or_time, do: build(:bad_request, "Invalid date or time format")
+  def error_user_not_found, do: build(:not_found, "Meal not found")
 end

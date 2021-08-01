@@ -1,7 +1,8 @@
 defmodule Exmeal.Factory do
-  use ExMachina.Ecto, repo: Rockelivery.Repo
+  use ExMachina.Ecto, repo: Exmeal.Repo
 
   alias Ecto.UUID
+  alias Exmeal
   alias Exmeal.Meals.Schema.Meal
 
   def meal_params_factory do
