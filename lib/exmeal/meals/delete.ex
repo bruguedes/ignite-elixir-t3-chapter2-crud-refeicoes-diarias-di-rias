@@ -1,11 +1,11 @@
-defmodule Exmeal.Meals.Get do
-  alias Exmeal.{Error, Repo}
+defmodule Exmeal.Meals.Delete do
+  alias Exmeal.Meals.Get
   alias Exmeal.Meals.Schema.Meal
+  alias Exmeal.Repo
 
-  def by_id(id) do
-    case Repo.get(Meal, id) do
-      %Meal{} = meal -> {:ok, meal}
-      nil -> {:error, Error.error_user_not_found()}
+  def call(id) do
+    with {:ok, %Meal{} = meal} <- Get.by_id(id) do
+      Repo.delete(meal)
     end
   end
 end
