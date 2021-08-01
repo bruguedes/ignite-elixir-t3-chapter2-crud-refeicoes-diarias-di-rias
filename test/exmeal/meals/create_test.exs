@@ -21,7 +21,9 @@ defmodule Exmeal.Meals.CreateTest do
     end
 
     test "when there are invalid params, returns an error" do
-      params = build(:meal_params, calories: "aaa")
+      params =
+        build(:meal_params)
+        |> Map.put("calories", "aaa")
 
       response = Exmeal.create_meal(params)
 
@@ -29,8 +31,10 @@ defmodule Exmeal.Meals.CreateTest do
     end
   end
 
-  test "when hour  is invalid, returns an error" do
-    params = build(:meal_params, time: "aa:aa")
+  test "when hour is invalid, returns an error" do
+    params =
+      build(:meal_params)
+      |> Map.put("time", "aa:aa")
 
     response = Exmeal.create_meal(params)
 

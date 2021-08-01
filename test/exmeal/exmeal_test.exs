@@ -3,7 +3,7 @@ defmodule Exmeal.MealTest do
 
   alias Ecto.Changeset
 
-  alias Exmeal.Meals.Create
+  alias Exmeal.Meals.DateParse
   alias Exmeal.Meals.Schema.Meal
 
   describe "changeset/1" do
@@ -15,7 +15,7 @@ defmodule Exmeal.MealTest do
         "calories" => "20"
       }
 
-      {:ok, params} = Create.date_parse(params)
+      {:ok, params} = DateParse.parse(params)
       response = Meal.changeset(params)
 
       assert %Changeset{
